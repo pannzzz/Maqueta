@@ -1,0 +1,60 @@
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px; /* Añadir espacio entre imágenes y texto */
+}
+
+.image_container {
+  width: 30%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.about_text {
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+
+.about_text h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about_text p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text_arrows {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.arrow_left_text,
+.arrow_right_text {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.arrow_left_text img,
+.arrow_right_text img {
+  width: 100%;
+  height: auto;
+}
+

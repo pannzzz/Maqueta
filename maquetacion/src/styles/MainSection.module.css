@@ -1,0 +1,86 @@
+.about_section {
+  display: flex;
+  justify-content: space-between; /* las imágenes y el texto estén uno al lado del otro */
+  align-items: center;
+  padding: 20px;
+}
+
+.about_image {
+  position: relative;
+  width: 40%; /* Ajusta el tamaño del contenedor de la imagen */
+}
+
+.about_image img {
+  width: 100%; /* Ajusta la imagen al contenedor */
+  height: auto;
+  object-fit: cover;
+  max-height: 400px; /* Limita la altura de la imagen */
+}
+
+.about_text {
+  width: 45%; /* Ajusta el ancho del texto */
+  padding: 20px;
+  position: relative;
+}
+
+.about_text h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about_text p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.arrow_left,
+.arrow_right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(118, 116, 116, 0.5);
+  border: none;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.arrow_left {
+  left: 10px;
+}
+
+.arrow_right {
+  right: 10px;
+}
+
+.arrow_left img,
+.arrow_right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para los botones de cambio de texto */
+.text_arrows {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.arrow_left_text,
+.arrow_right_text {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.arrow_left_text img,
+.arrow_right_text img {
+  width: 100%;
+  height: auto;
+}
