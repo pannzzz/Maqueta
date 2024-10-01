@@ -1,13 +1,16 @@
 .header {
   display: flex;
+  justify-content: flex-end; /* Mueve tanto el logo como el menú a la derecha */
   align-items: center;
-  right: -50px;
+  padding: 20px;
   position: absolute;
   top: 0;
-  height: 23%;
-  width: 99%;
+  width: 90%;
   z-index: 10;
-  top: 10px;
+}
+
+.logo {
+  margin-right: 20px; /* Añade un pequeño margen derecho al logo */
 }
 
 .logo h1 {
@@ -27,12 +30,12 @@
 }
 
 .nav_links li a {
-  letter-spacing: 6px;
   text-decoration: none;
   color: rgb(5, 4, 4);
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 .nav_links li a::after {
@@ -42,7 +45,7 @@
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #000; /* Línea negra en hover */
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -52,9 +55,8 @@
 }
 
 .nav_links li a:hover {
-  color: #aaa;
+  color: #555; /* Color más claro al hacer hover */
 }
-
 
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
